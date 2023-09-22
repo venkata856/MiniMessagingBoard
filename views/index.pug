@@ -1,0 +1,17 @@
+extends layout
+block content
+  div.black#section Chat History!
+    ul.one
+      each val in contents
+        li.inside
+          p.user= val.user 
+          p.message= val.text
+          p.added= val.added
+  div.inputSection
+    form.chat(action="/new", method="POST")
+      label.messageLabel(for='message') Enter your Message Here:
+      textarea.chatContent#message(type="text" name="message" rows="4" cols="50" maxlength="160" required)
+      label.nameLabel(for='user') Enter your Name here:
+      input.userName#user(type="text" name="user" required)
+      button.click(type="submit") submit
+

@@ -1,0 +1,58 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.one{
+
+  border:1px solid blue;
+  margin:1px 0;
+  padding-left:0px;
+  border-left: 8px solid red;
+}
+.inside{
+  background-color: #d0eaf5;
+  padding: 9px;
+  margin: 10px;
+  border-radius: 5px;
+  position:relative;
+}
+
+.one li{
+
+  list-style-type: none;
+}
+
+.inputSection{
+
+  margin:1rem auto;
+}
+.chat{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-between;
+  gap:24px;
+}
+
+.chatContent{
+
+  width:360px;
+  height:120px;
+}
+.added{
+  margin-right: -20px;
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  font-weight: 100;
+  font-size: 12px;
+  font-family: system-ui;
+}
+.message{
+  margin-bottom:24px;
+}
